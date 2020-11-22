@@ -17,4 +17,11 @@ eureka:
 
 zuul:
   sensitive-headers: Cookie
+
+security:
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:8083/usuario
+    client:
+      resource-ids: resources
       
